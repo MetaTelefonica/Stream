@@ -1,0 +1,1 @@
+ffmpeg -i underwater.mp4 -c:v libx264 -c:a aac -b:v 13M -maxrate 13M -bufsize 26M -f hls -hls_time 5 -hls_segment_size 10485760 -hls_list_size 0 -hls_segment_filename "underwater_hls/segment_%03d.ts" -hls_start_number_source 0 underwater_hls/playlist.m3u8
