@@ -1,0 +1,1 @@
+ffmpeg -i R0010030.mp4 -c:v libx264 -c:a aac -b:v 56M -maxrate 56M -bufsize 112M -f hls -hls_time 5 -hls_segment_size 10485760 -hls_list_size 0 -hls_segment_filename "R0010030_hls/segment_%03d.ts" -hls_start_number_source 0 R0010030_hls/playlist.m3u8
